@@ -193,7 +193,7 @@ public class MainActivity extends BaseActivity implements ListenConversation {
     }
 
     private void signOut(){
-        showToast("Signing out ...");
+        showToast("Signing out...");
         FirebaseFirestore firestore = FirebaseFirestore.getInstance();
         DocumentReference documentReference = firestore.collection(Constants.KEY_COLLECTION_USERS)
                 .document(manager.getString(Constants.KEY_USERS_ID));
